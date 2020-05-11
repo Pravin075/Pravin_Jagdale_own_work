@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+<form>
+enter your name:<input type="text" id="first"/><br>
+<input type="submit" value="click to print highest no" onclick="print();"/>
+<script>
+function print()
+{
+var x=document.getElementById("first");
+alert(x.value);
+document.write("<h1 color:'red'>"+x.value);
+console.log(x.value);
+}
+</script>
+</body>
+</html>

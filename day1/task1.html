@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+function highest(l,m,n)
+{
+if(l>m)
+{
+if(l<n)
+{
+l=n;
+}
+return l;
+}
+else
+{
+   l=m;
+if(l<n)
+{
+ l=n;
+}
+}
+return l;
+}
+</script>
+</head>
+<body>
+<script>
+var a=100;
+var b=20;
+var c=786;
+var d=highest(a,b,c);
+document.write(d);
+</script>
+</body>

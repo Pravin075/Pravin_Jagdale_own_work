@@ -1,0 +1,43 @@
+<html>
+<head>
+<script>
+function highest(l,m,n)
+{
+if(l>m)
+{
+if(l<n)
+{
+l=n;
+}
+return l;
+}
+else
+{
+   l=m;
+if(l<n)
+{
+ l=n;
+}
+}
+return l;
+}
+</script>
+</head>
+<body>
+<form>
+<script>
+function data()
+{
+var x=document.getElementById("first");
+var y=document.getElementById("second");
+var z=document.getElementById("third");
+var d=highest(x.value,y.value,z.value);
+document.write(d);
+}
+</script>
+enter no 1:<input type="number" id="first"/><br>
+enter no 2:<input type="number" id="second"/><br>
+enter no 3:<input type="number" id="third"/><br>
+<input type="submit" value="click to print highest no" onclick="data();"/>
+</body>
+</html>

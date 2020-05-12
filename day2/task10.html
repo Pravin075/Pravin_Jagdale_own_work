@@ -1,0 +1,22 @@
+<html>
+<body>
+<form>
+enter number:<input type="number" id="here" required/><br>
+<input type="submit" onclick="searchdata()" />
+</form>
+<script>
+function searchdata()
+{
+var x=document.getElementById("here").value;
+alert(x);
+var a=x.length;
+alert(a);
+if(a==10)
+document.write("<h1>it is 10 digit number");
+else
+document.write("<h1>it is not 10 digit number");
+
+}
+</script>
+</body>
+</html>

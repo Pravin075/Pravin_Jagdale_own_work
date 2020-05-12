@@ -1,0 +1,18 @@
+<html>
+<body>
+<form>
+enter numbers:<input type="text" id="here" placeholder="enter numbers separated by comma" required/><br>
+<input type="submit" onclick="ascnd()" />
+<script>
+function ascnd()
+{
+var x=document.getElementById("here").value;
+var arr=x.split(",");
+alert(arr);
+arr.sort();
+document.write(arr);
+
+}
+</script>
+<form/>
+</body>

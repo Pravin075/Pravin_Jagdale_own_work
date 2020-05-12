@@ -1,0 +1,20 @@
+<html>
+<body>
+<form>
+enter email:<input type="text" id="here" placeholder="enter mail" required/><br>
+<input type="submit" onclick="searchdata()" />
+</form>
+<script>
+function searchdata()
+{
+var x=document.getElementById("here").value;
+var a=x.includes("@");
+if(a==true)
+document.write("<h1>@ is present");
+else
+document.write("<h1>@ is not present");
+
+}
+</script>
+</body>
+</html>

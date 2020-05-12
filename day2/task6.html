@@ -1,0 +1,18 @@
+<html>
+<body>
+<form>
+box1:<input id="yes1" required/>
+box2:<input id="yes2" />
+</form>
+<button onclick="copyf()" >try</button>
+
+<script>
+function copyf()
+{
+var x=document.getElementById("yes1").value;
+alert(x);
+document.getElementById("yes2").value=x;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<body>
+<form>
+enter numbers:<input type="text" id="here" placeholder="enter numbers separated by comma" required/><br>
+<input type="submit" onclick="maximum()" />
+<script>
+function maximum()
+{
+var x=document.getElementById("here").value;
+var arr=x.split(",");
+alert(arr);
+var m=Math.max.apply(Math,arr);
+document.write(m);
+}
+</script>
+<form/>
+</body>

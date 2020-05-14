@@ -1,0 +1,59 @@
+<html>
+<body>
+<h1 style='color:red' align="center">WELCOME TO THE WORLD OF ENTERTAINMENT</h1><br><br>
+<form align="center">
+ enter data::<input id="pas" placeholder="enter data separated by comma" size="25" required/><br> 
+
+</form>
+
+<div align="center"><button onclick="hgame()" align="center">click</button></div>
+<script>
+function hgame()
+{
+ x=document.getElementById("pas").value;
+ arr=x.split(",");           //global array
+ l=arr.length;              //global length
+document.write("<button onclick='here1()'>host</button><br><br>");
+document.write("<h2 style='color:red'>HERE IS YOUR TICKETS</h2>");
+for(var z=0;z<50;z++)
+{
+document.write("<table border='1px' cellspacing='0' >");
+for(var a=0;a<3;a++)
+{
+document.write("<tr>");
+for(var b=0;b<3;b++)
+{
+var i=Math.trunc(Math.random()*l);
+
+document.write("<td>" + arr[i] + "</td>");
+}
+document.write("</tr>");
+}
+document.write("</table></br></br>");
+}
+}
+
+function here1()
+{
+var m=0;
+var ar2= new Array();    // created array to check wether calling no is present or not
+for(var k=0;k<l;k++)
+{
+var i=Math.trunc(Math.random()*l);
+var p=arr[i];
+var dk=ar2.includes(p);        // it wil check wether no is present in array or not
+if(dk==false)
+{
+ar2[m++]=p;            // if no is not present perform this
+alert(p);
+}
+if(dk==true)
+{
+--k;                    // if no is present do action again without increasing loop i.e. --k
+}
+}
+alert(ar2);
+}
+</script>
+</body>
+</html>

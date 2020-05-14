@@ -1,0 +1,24 @@
+<html>
+<body>
+<form>
+give number:<input type="number" id="here" /><br>
+</form>
+<button onclick="fact()">click to find factorial</button>
+<h1 id="putv"></h1>
+<script>
+function fact()
+{
+var a=document.getElementById("here").value;
+var d=arrfact(a);
+document.getElementById("putv").innerHTML=d;
+}
+
+var arrfact=(b)=> {
+        var f=1;
+  for(var i=b;i>=2;i--)
+    f=f*i;
+	return f;
+	}
+</script>
+</body>
+</html>

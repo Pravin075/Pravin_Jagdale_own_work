@@ -1,0 +1,26 @@
+<html>
+<body>
+<script>
+var Sum=class
+{
+constructor(a)
+{
+this.name=a;
+this.balance2=0;
+}
+balance1(b)
+{
+this.balance2=this.balance2+b;
+
+}
+};
+var obj1=new Sum("pravin");
+var obj2=new Sum("raj");
+obj1.balance1(100);
+obj1.balance1(200);
+obj2.balance1(2000);
+document.write("<h1 style='color:red'>"+obj1.name+" having salary="+ obj1.balance2+"</h1>");
+document.write("<h1 style='color:red'>"+obj2.name+" having salary="+ obj2.balance2+"</h1>");
+</script>
+</body>
+</html>

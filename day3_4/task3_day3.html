@@ -1,0 +1,31 @@
+<html>
+<body>
+<form>
+give number:<input type="number" id="here" /><br>
+</form>
+<button onclick="ff()">click to find square and cube</button>
+<h1 id="putsq" style='color:red'></h1>
+<h1 id="putcb" style='color:red'></h1>
+<script>
+function ff()
+{
+var x=document.getElementById("here").value;
+var pract=class
+{
+static square(a)
+{
+return a*a;
+}
+static cube(a)
+{
+return a*a*a;
+}
+};
+var sq=pract.square(x);
+document.getElementById("putsq").innerHTML="square of no is "+sq;
+var cb=pract.cube(x);
+document.getElementById("putcb").innerHTML="cube of no is "+cb;
+}
+</script>
+</body>
+</html>

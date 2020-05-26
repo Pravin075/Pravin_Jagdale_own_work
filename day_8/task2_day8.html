@@ -1,0 +1,59 @@
+<html>
+<script>
+class Student
+{
+constructor()
+{
+var roll;
+var name;
+var marks1;
+var marks2;
+var marks3;
+}
+set namhere(value){
+this.name=value;
+}
+set rollhere(value){
+this.roll=value;
+}
+set m1here(value){
+this.marks1=value;
+}
+set m2here(value){
+this.marks2=value;
+}
+set m3here(value){
+this.marks3=value;
+}
+get namhere()
+{
+return this.name;
+}
+}
+
+Student.prototype.total = function() {
+return this.marks1 + this.marks2 + this.marks3;
+}
+
+Student.prototype.percent = function()
+{
+return ((this.marks1 + this.marks2 + this.marks3) * 100) / 300;
+}
+
+var s1 = new Student();
+var s2 = new Student();
+s1.rollhere=75;
+s1.namhere="Pravin";
+s1.m1here=88;
+s1.m2here=90;
+s1.m3here=79;
+document.write(s1.namhere +" : total= " + s1.total() +" & percent= " + s1.percent() +"<br>");
+
+s2.rollhere=70;
+s2.namhere="Raj";
+s2.m1here=80;
+s2.m2here=92;
+s2.m3here=89;
+document.write(s2.namhere +" : total= " + s2.total() +" & percent= " + s2.percent());
+</script>
+</html>

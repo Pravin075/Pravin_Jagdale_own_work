@@ -1,0 +1,46 @@
+<html>
+<script>
+class Employee
+{
+constructor()
+{
+var id;
+var name;
+var salary;
+var netsalary;
+}
+get idhere()
+{
+return this.id;
+}
+set idhere(value){
+this.id=value;
+}
+get namehere()
+{
+return this.name;
+}
+set namehere(value){
+this.name=value;
+}
+get salaryhere()
+{
+return this.salary;
+}
+set salaryhere(value){
+this.salary=value;
+}
+nethere()
+{
+let ss = this.salary / 10;
+return this.salary-ss;
+}
+}
+
+var emp = new Employee();
+emp.idhere=10;
+emp.namehere="Pravin";
+emp.salaryhere=40000;
+document.write(emp.idhere +" "+ emp.namehere +" "+ emp.salaryhere +"net salary "+ emp.nethere());
+</script>
+</html>
